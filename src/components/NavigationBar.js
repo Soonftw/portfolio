@@ -5,9 +5,10 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .navbar {
-    background-color: #222;
+    background-color: #282744;
   }
   a,
+  .navbar-toggle,
   .navbar-brand,
   .navbar-nav .nav-link {
     color: #bbb;
@@ -20,7 +21,7 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">Johannes</Navbar.Brand>
+      <Navbar.Brand href="/">Johannes Thessén</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
