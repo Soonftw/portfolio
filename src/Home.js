@@ -1,43 +1,185 @@
-import React from "react";
+import React, { Component } from "react";
+import styled from "styled-components";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
-export const Home = () => (
-  <div>
-    <h2>Hello World!</h2>
-    <p>
-      Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem
-      ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare
-      tog att antal bokstäver och blandade dem för att göra ett provexemplar av
-      en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även
-      övergången till elektronisk typografi utan större förändringar. Det blev
-      allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med
-      avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.
-    </p>
-    <p>
-      Det är ett välkänt faktum att läsare distraheras av läsbar text på en sida
-      när man skall studera layouten. Poängen med Lorem Ipsum är att det ger ett
-      normalt ordflöde, till skillnad från "Text här, Text här", och ger intryck
-      av att vara läsbar text. Många publiseringprogram och webbutvecklare
-      använder Lorem Ipsum som test-text, och en sökning efter "Lorem Ipsum"
-      avslöjar många webbsidor under uteckling. Olika versioner har dykt upp
-      under åren, ibland av olyckshändelse, ibland med flit (mer eller mindre
-      humoristiska).
-    </p>
-    <p>
-      I motsättning till vad många tror, är inte Lorem Ipsum slumpvisa ord. Det
-      har sina rötter i ett stycke klassiskt litteratur på latin från 45 år före
-      år 0, och är alltså över 2000 år gammalt. Richard McClintock, en professor
-      i latin på Hampden-Sydney College i Virginia, översatte ett av de mer
-      ovanliga orden, consectetur, från ett stycke Lorem Ipsum och fann dess
-      ursprung genom att studera användningen av dessa ord i klassisk
-      litteratur. Lorem Ipsum kommer från styckena 1.10.32 och 1.10.33 av "de
-      Finibus Bonorum et Malorum" (Ytterligheterna av ont och gott) av Cicero,
-      skriven 45 före år 0. Boken är en avhandling i teorier om etik, och var
-      väldigt populär under renäsanssen. Den inledande meningen i Lorem Ipsum,
-      "Lorem Ipsum dolor sit amet...", kommer från stycke 1.10.32. Den
-      ursprungliga Lorem Ipsum-texten från 1500-talet är återgiven nedan för de
-      intresserade. Styckena 1.10.32 och 1.10.33 från "de Finibus Bonorum et
-      Malorum" av Cicero hittar du också i deras originala form, åtföljda av de
-      engelska översättningarna av H. Rackham från 1914.
-    </p>
-  </div>
-);
+const Styles = styled.div`
+  .img-thumbnail {
+    border-radius: 5%;
+  }
+`;
+
+class Home extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Styles>
+          <section id="showcase">
+            <div className="row">
+              <div className="col-md-6 col-sm-6">
+                <Zoom>
+                  <div class="showcase-left">
+                    <img
+                      className="img-thumbnail"
+                      src="./assets/profile2.jpg"
+                      alt="Profile 2"
+                    />
+                  </div>
+                </Zoom>
+              </div>
+              <Fade right>
+                <div className="col-md-6 col-sm-6">
+                  <div className="showcase-right">
+                    <h1>Welcome to my portfolio</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium dolorem earum natus at nisi? Provident numquam
+                      quod expedita placeat nisi praesentium, amet, quasi
+                      incidunt in, neque facilis quaerat tenetur odio.
+                    </p>
+                  </div>
+                  <button className="btn btn-outline-secondary btn-lg showcase-btn">
+                    Read More
+                  </button>
+                </div>
+              </Fade>
+            </div>
+          </section>
+
+          <Zoom>
+            <section id="testimonial">
+              <blockquote class="blockquote text-right">
+                <p class="mb-0">"Johannes är så bra"</p>
+                <footer class="blockquote-footer">
+                  William Shakespeare in{" "}
+                  <cite title="Source Title">New York Times</cite>
+                </footer>
+              </blockquote>
+            </section>
+          </Zoom>
+
+          <section id="info1">
+            <div className="row">
+              <Zoom>
+                <div className="col-md-6 col-sm-6">
+                  <div className="info-left">
+                    <h2>See my previous work</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, cum vitae? Incidunt amet odit perferendis
+                      accusantium modi? Delectus sapiente id at tempora dolore
+                      vero, numquam, reprehenderit, illo necessitatibus cum
+                      laborum.
+                    </p>
+                  </div>
+                </div>
+              </Zoom>
+              <Zoom>
+                <div className="col-md-6 col-sm-6">
+                  <div className="info-right">
+                    <img
+                      className="img-thumbnail"
+                      src="assets/profile1.jpg"
+                      alt="Profile 1"
+                    />
+                  </div>
+                </div>
+              </Zoom>
+            </div>
+          </section>
+
+          <section id="info2">
+            <div className="row">
+              <div className="col-md-6 col-sm-6">
+                <Fade left>
+                  <div className="info-left">
+                    <h2>Info Block</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, cum vitae? Incidunt amet odit perferendis
+                      accusantium modi? Delectus sapiente id at tempora dolore
+                      vero, numquam, reprehenderit, illo necessitatibus cum
+                      laborum.
+                    </p>
+                    {/* <img
+                    className="img-thumbnail"
+                    src="assets/DSC_4420.jpg"
+                    alt="profile2"
+                  /> */}
+                  </div>
+                </Fade>
+              </div>
+              <div className="col-md-6 col-sm-6">
+                <Fade right>
+                  <div className="info-right">
+                    <h2>Info Block</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, cum vitae? Incidunt amet odit perferendis
+                      accusantium modi? Delectus sapiente id at tempora dolore
+                      vero, numquam, reprehenderit, illo necessitatibus cum
+                      laborum.
+                    </p>
+                  </div>
+                </Fade>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact">
+            <div className="row">
+              <div className="col-md-5">
+                <form id="contact-form">
+                  <div className="form-group">
+                    <label>Name: </label>
+                    <input
+                      className="form-control"
+                      type="text"
+                      name=""
+                      value=""
+                      placeholder="Enter Name"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Email: </label>
+                    <input
+                      className="form-control"
+                      type="text"
+                      name=""
+                      value=""
+                      placeholder="Enter Email"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Message: </label>
+                    <textarea
+                      className="form-control"
+                      name=""
+                      value=""
+                      placeholder="Enter Message"
+                    ></textarea>
+                  </div>
+                  <button
+                    className="btn btn-outline-secondary btn-lg showcase-btn"
+                    type="submit"
+                    form="contact-form"
+                    value="Submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+              <div className="col-md-7"></div>
+            </div>
+          </section>
+
+          <footer>
+            <p className="text-center">Copyright &copy; 2020</p>
+          </footer>
+        </Styles>
+      </React.Fragment>
+    );
+  }
+}
+
+export default Home;

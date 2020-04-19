@@ -1,13 +1,113 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-size: 16px;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: blue; */
+  /* font-size: xx-large !important; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins;
+}
+
+p {
+  font-family: Roboto;
+}
+
+.navbar-default {
+  background: #fff;
+  border: 0;
+  font-family: Poppins;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+#showcase h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#showcase img {
+  width: 80%;
+  margin-left: 30px;
+}
+
+#showcase .showcase-right {
+}
+
+#testimonial {
+  background: #f1f1f1;
+  padding: 50px 20px 10px 0px;
+  line-height: 5px;
+  /* text-align: center; */
+  margin-top: 40px;
+}
+
+#testimonial p {
+  padding-right: 20px;
+  font-size: 32px;
+  font-family: "Josefin Sans";
+  color: #000;
+}
+
+#testimonial p.customer {
+  font-size: 20px;
+  color: #666;
+}
+
+#info1 .info-right {
+  margin-top: 60px;
+  text-align: right;
+  margin-right: 30px;
+}
+.info-right img {
+  width: 75%;
+}
+
+.info-left {
+  margin-top: 60px;
+}
+
+#info2 {
+  margin: 20px 0 60px 0;
+}
+#info2 .info-left {
+  margin-top: 30px;
+}
+
+#info2 .info-right {
+  margin-top: 30px;
+}
+
+#contact {
+  background: url(./assets/fuji.jpg);
+  padding: 40px;
+  color: #fff;
+  border-top: #333 7px solid;
+  border-bottom: #333 7px solid;
+  background-size: cover;
+  /* position: relative; */
+  z-index: -2;
+}
+
+footer {
+  padding: 30px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  font-family: Poppins;
 }
