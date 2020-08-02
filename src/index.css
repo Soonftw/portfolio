@@ -44,7 +44,8 @@ p {
   margin-left: 30px;
 }
 
-#showcase .showcase-right {
+#showcase {
+  margin-bottom: 40px;
 }
 
 #testimonial {
@@ -68,7 +69,7 @@ p {
 }
 
 #info1 .info-right {
-  margin-top: 60px;
+  margin-top: 30px;
   text-align: right;
   margin-right: 30px;
 }
@@ -88,6 +89,22 @@ p {
 }
 
 #info2 .info-right {
+  margin-top: 30px;
+}
+
+.icons {
+  background-color: #dbe2e5;
+}
+
+#softwareIcon {
+  margin: 40px;
+}
+
+#teacherIcon {
+  margin: 40px;
+}
+
+#socialIcons {
   margin-top: 30px;
 }
 

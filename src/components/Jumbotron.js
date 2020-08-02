@@ -22,6 +22,9 @@ const Styles = styled.div`
     right: 0;
     z-index: -1;
   }
+  p {
+    margin-left: 3px;
+  }
 `;
 
 export const Jumbotron = () => (
@@ -30,8 +33,8 @@ export const Jumbotron = () => (
       <div className="overlay"></div>
 
       <Container>
-        <h1>Welcome</h1>
-        <p>This is my CV</p>
+        <h1>Johannes Thessén</h1>
+        <p>Engineer and Teacher</p>
       </Container>
     </Jumbo>
   </Styles>

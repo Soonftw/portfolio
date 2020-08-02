@@ -22,24 +22,32 @@ export const CV = () => (
         <p className="text-justify text-right">+46 763 755 890</p>
         <p className="text-justify text-right">johannes.thessen@gmail.com</p>
       </dd>
-
       <dt className="col-md-12">
         <hr />
         <h3 className="text-center">Education</h3>
         <br />
       </dt>
-
       <dt className="col-md-3">
-        <h5>2015―current year</h5>
+        <h5>2015―2020</h5>
       </dt>
       <dd className="col-md-8">
         <p>
           Master of Science in Engineering and in Education,{" "}
           <em>Royal Institute of Technology</em>, 300 credits: A five-year
           combination programme which results in both a Master of Science in
-          Engineering degree and a teaching degree. I am currently on my fifth
-          and last year within the Mathematics and Information- and
-          Communication Technology discipline.
+          Engineering (Information- and Communication Technology and
+          Mathematics) and a teaching degree.
+        </p>
+      </dd>
+      <dt className="col-md-3">
+        <h5>2018-04―2018-08</h5>
+      </dt>
+      <dd className="col-md-8">
+        <p>
+          Exchange studies, <em>Shibaura Institute of Technology</em>, 30
+          credits: A semester of exchange studies in Tokyo, where I studied
+          various courses ranging from programming, mathematics and the Japanese
+          language.
         </p>
       </dd>
       <dt className="col-md-3">
@@ -59,7 +67,6 @@ export const CV = () => (
           mathematics.
         </p>
       </dd>
-
       <dt className="col-md-3">
         <h5>2011-01―2011-08</h5>
       </dt>
@@ -73,7 +80,6 @@ export const CV = () => (
           military training.
         </p>
       </dd>
-
       <dt className="col-md-3">
         <h5>2007―2010</h5>
       </dt>
@@ -83,13 +89,11 @@ export const CV = () => (
           in information technology.
         </p>
       </dd>
-
       <dt className="col-md-12">
         <hr />
         <h3 className="text-center">Experience</h3>
         <br />
       </dt>
-
       <dt className="col-md-3">
         <h5>2012―current year</h5>
       </dt>
@@ -99,7 +103,6 @@ export const CV = () => (
           employment where I go in and work a couple of weeks each year.
         </p>
       </dd>
-
       <dt className="col-md-3">
         <h5>2016―2019</h5>
       </dt>
@@ -110,7 +113,6 @@ export const CV = () => (
           constructing and maintaining gardens in Stockholm.
         </p>
       </dd>
-
       <dt className="col-md-3">
         <h5>2013―2015</h5>
       </dt>
@@ -125,7 +127,6 @@ export const CV = () => (
           Drottningholm Palace and at The Royal Palace.
         </p>
       </dd>
-
       <dt className="col-md-3">
         <h5>2012-12―2013-03</h5>
       </dt>
@@ -134,7 +135,6 @@ export const CV = () => (
           Retail worker, <em>Clas Ohlson.</em>
         </p>
       </dd>
-
       <dt className="col-md-3">
         <h5>2011―2012</h5>
       </dt>
@@ -144,13 +144,11 @@ export const CV = () => (
           at the Air Defense regiment in Halmstad.
         </p>
       </dd>
-
       <dt className="col-md-12">
         <hr />
         <h3 className="text-center">Skills and merits</h3>
         <br />
       </dt>
-
       <dt className="col-md-3"></dt>
       <dd className="col-md-8">
         <ul className="skills-and-merits">
