@@ -86,11 +86,6 @@ class Home extends Component {
                     time experimented with websites, projects with Raspberry Pi,
                     Arduino, as well as explored the three main cloud services.
                   </p>
-                  <p>
-                    <a className="btn btn-secondary" href="#" role="button">
-                      View details »
-                    </a>
-                  </p>
                 </div>
               </Fade>
               <div className="col-lg-1"></div>
@@ -107,11 +102,6 @@ class Home extends Component {
                     where I end up, the most important thing for me is that it
                     is a creative workplace where I feel that I can develop and
                     help other people develop.
-                  </p>
-                  <p>
-                    <a className="btn btn-secondary" href="#" role="button">
-                      View details »
-                    </a>
                   </p>
                 </div>
                 {/* <div className="col-lg-1"></div> */}
