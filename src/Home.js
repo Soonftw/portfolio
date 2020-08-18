@@ -93,7 +93,7 @@ class Home extends Component {
                   </p>
                 </div>
               </Fade>
-              <div className="col-lg-2"></div>
+              <div className="col-lg-1"></div>
               <Fade right>
                 <div className="col-lg-5 text-center">
                   <i
@@ -114,6 +114,7 @@ class Home extends Component {
                     </a>
                   </p>
                 </div>
+                {/* <div className="col-lg-1"></div> */}
               </Fade>
             </div>
 

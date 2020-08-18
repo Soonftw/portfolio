@@ -4,6 +4,7 @@ import Home from "./Home";
 import { CV } from "./CV";
 import { Contact } from "./Contact";
 import Education from "./Education";
+import Transcript from "./Transcript";
 import { NoMatch } from "./NoMatch";
 import { Layout } from "./components/Layout";
 import { NavigationBar } from "./components/NavigationBar";
@@ -22,6 +23,7 @@ class App extends Component {
               <Route path="/CV" component={CV} />
               <Route path="/contact" component={Contact} />
               <Route path="/education" component={Education} />
+              <Route path="/transcript" component={Transcript} />
               <Route component={NoMatch} />
             </Switch>
           </Layout>

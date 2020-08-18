@@ -1,119 +1,95 @@
 import React, { Component } from "react";
-import axios from "axios";
-import FadeIn from "react-fade-in"; //Styling for loadingbar
-import Lottie from "react-lottie"; //Styling for loadingbar
-import * as loadImage from "./loading"; //Styling for loadingbar
 
-const defaultOptions = {
-  //Options used for formatting the loading bar when fetching API request
-  loop: true,
-  autoplay: true,
-  animationData: loadImage.default,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
-
-class Home extends Component {
-  constructor() {
-    super();
-
-    // this.handleOnSubmit = this.handleOnSubmit.bind(this);
-
-    this.state = {
-      done: undefined, //Determined whether to show loading bar or plantList component
-      data: {},
-    };
-  }
-
-  componentDidMount() {
-    //fetch program information
-    axios
-      .get(
-        "https://cors-anywhere.herokuapp.com/https://api.kth.se/api/kopps/v2/programme/CLGYM"
-      )
-      .then((response) => {
-        this.setState({ done: true, data: response.data });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+class Education extends Component {
   render() {
-    const programme = this.state.data;
     return (
-      <div>
-        <h2>Hello World!</h2>
+      <div className="row">
         <div className="row">
-          {!this.state.done ? ( //If the data is not yet retrieved - show loading bar
-            <FadeIn>
-              <div className="d-flex justify-content-center align-items-center">
-                <h1>Loading flowers from database</h1>
-                <Lottie options={defaultOptions} height={120} width={120} />
-              </div>
-            </FadeIn>
-          ) : (
-            <div className="col-md-12">
-              <table className="table">
-                <thead className="thead-light">
-                  <tr>
-                    <th>Programme</th>
-                    <th>Programme Code</th>
-                    <th>Credits</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>{programme.titleOtherLanguage}</td>
-                    <td>{programme.programmeCode}</td>
-                    <td>{programme.credits + programme.creditUnitAbbr}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          )}
+          <div className="col-md-12">
+            <h1>Master of Science in Engineering and in Education</h1>
+            <p>
+              "The combination programme, Master of Science in Engineering and
+              in Education, results in a Master&#8217;s degree and a teaching
+              degree from The Royal Institute of Technology within one of the
+              subject combinations: mathematics/physics, mathematics/chemistry
+              or mathematics/technology, where the&#160;technology subject is
+              profiled&#160;towards either information and communication
+              technology or energy and environmental science. The programme
+              gives both the competencies to work as a pedagogical engineer and
+              as a teacher mainly within upper secondary schools and adult
+              education institutions.""
+            </p>
+            <p>
+              "Having completed training in the Mathematics/ICT - branch of the
+              CL program the student should be able to
+              <ul>
+                <li>
+                  explain and use basic principles and relationships in
+                  programming techniques, object orientation, algorithms, data
+                  structures, database technology and computer engineering
+                </li>
+                <li>
+                  develop software and software systems in a structured manner,
+                  both independently and in groups
+                </li>
+                <li>
+                  master basic engineering methodologies such as estimations,
+                  plausibility assessments and dimensional analysis
+                </li>
+                <li>
+                  model real problems with discrete structures, objects and
+                  databases so that they can be solved with computers
+                </li>
+                <li>
+                  analyze and evaluate the economic, social, environmental and
+                  ethical impact of information technology applications, and to
+                  design systems with regard to this
+                </li>
+                <li>
+                  communicate information in an educational way within the
+                  information technology area, both orally and in writing
+                </li>
+                <li>
+                  relate knowledge and skills to teaching and learning in upper
+                  secondary school courses in programming and media and
+                  communication studies so that they will be able to ...
+                  <ul>
+                    <li>
+                      ... work as teachers in mathematics, programming, media
+                      and communication studies{" "}
+                    </li>
+                    <li>
+                      ... work with knowledge management in the public sector
+                      and in business{" "}
+                    </li>
+                    <li>
+                      ... work with development of technological learning
+                      systems{" "}
+                    </li>
+                    <li>
+                      ... work in the computer industry in their selected
+                      specialization."
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+          </div>
         </div>
-        <p>
-          Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin.
-          Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd
-          boksättare tog att antal bokstäver och blandade dem för att göra ett
-          provexemplar av en bok. Lorem ipsum har inte bara överlevt fem
-          århundraden, utan även övergången till elektronisk typografi utan
-          större förändringar. Det blev allmänt känt på 1960-talet i samband med
-          lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med
-          mjukvaror som Aldus PageMaker.
-        </p>
-        <p>
-          Det är ett välkänt faktum att läsare distraheras av läsbar text på en
-          sida när man skall studera layouten. Poängen med Lorem Ipsum är att
-          det ger ett normalt ordflöde, till skillnad från "Text här, Text här",
-          och ger intryck av att vara läsbar text. Många publiseringprogram och
-          webbutvecklare använder Lorem Ipsum som test-text, och en sökning
-          efter "Lorem Ipsum" avslöjar många webbsidor under uteckling. Olika
-          versioner har dykt upp under åren, ibland av olyckshändelse, ibland
-          med flit (mer eller mindre humoristiska).
-        </p>
-        <p>
-          I motsättning till vad många tror, är inte Lorem Ipsum slumpvisa ord.
-          Det har sina rötter i ett stycke klassiskt litteratur på latin från 45
-          år före år 0, och är alltså över 2000 år gammalt. Richard McClintock,
-          en professor i latin på Hampden-Sydney College i Virginia, översatte
-          ett av de mer ovanliga orden, consectetur, från ett stycke Lorem Ipsum
-          och fann dess ursprung genom att studera användningen av dessa ord i
-          klassisk litteratur. Lorem Ipsum kommer från styckena 1.10.32 och
-          1.10.33 av "de Finibus Bonorum et Malorum" (Ytterligheterna av ont och
-          gott) av Cicero, skriven 45 före år 0. Boken är en avhandling i
-          teorier om etik, och var väldigt populär under renäsanssen. Den
-          inledande meningen i Lorem Ipsum, "Lorem Ipsum dolor sit amet...",
-          kommer från stycke 1.10.32. Den ursprungliga Lorem Ipsum-texten från
-          1500-talet är återgiven nedan för de intresserade. Styckena 1.10.32
-          och 1.10.33 från "de Finibus Bonorum et Malorum" av Cicero hittar du
-          också i deras originala form, åtföljda av de engelska översättningarna
-          av H. Rackham från 1914.
-        </p>
+        <div className="row">
+          <div className="col-md-12 text-right">
+            <a
+              className="btn btn-secondary float-right"
+              href="https://www.kth.se/student/kurser/program/CLGYM/20172/mal?l=en"
+              role="button"
+            >
+              Read More »
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-export default Home;
+export default Education;

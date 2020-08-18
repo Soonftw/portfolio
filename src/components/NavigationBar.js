@@ -37,6 +37,11 @@ export const NavigationBar = () => (
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
+              <Link to="/transcript">Transcript</Link>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>
               <Link to="/contact">Contact</Link>
             </Nav.Link>
           </Nav.Item>

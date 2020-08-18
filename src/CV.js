@@ -95,12 +95,21 @@ export const CV = () => (
         <br />
       </dt>
       <dt className="col-md-3">
-        <h5>2012―current year</h5>
+        <h5>2020―Ongoing</h5>
       </dt>
       <dd className="col-md-8">
         <p>
-          Reservist, <em>Swedish Armed Forces</em>: An ongoing temporary
-          employment where I go in and work a couple of weeks each year.
+          Teacher, <em>Åva Gymnasium</em>: An ongoing employment where I teach
+          upper secondary schoo mathematics and programming.
+        </p>
+      </dd>
+      <dt className="col-md-3">
+        <h5>2012―2020</h5>
+      </dt>
+      <dd className="col-md-8">
+        <p>
+          Reservist, <em>Swedish Armed Forces</em>: An temporary employment
+          where I go in and work a couple of weeks each year.
         </p>
       </dd>
       <dt className="col-md-3">
@@ -128,7 +137,7 @@ export const CV = () => (
         </p>
       </dd>
       <dt className="col-md-3">
-        <h5>2012-12―2013-03</h5>
+        <h5>2012―2013</h5>
       </dt>
       <dd className="col-md-8">
         <p>
